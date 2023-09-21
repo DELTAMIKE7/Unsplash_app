@@ -1,0 +1,53 @@
+
+.SearchContainer {
+	width: 100vw;
+	height: 60vh;
+	/* background-color: rgb(221, 147, 147); */
+    font-family: gilroy;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.df {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.SearchHeading {
+	/* color:blue; */
+	color: white;
+	mix-blend-mode: exclusion;
+	font-size: 6vmax;
+}
+.SearchPara {
+	color: white;
+	mix-blend-mode: exclusion;
+	font-size: 1.3vmax;
+    margin-bottom: 20px;
+}
+.SearchForm {
+	background-color: white;
+	/* padding: 0vmax 7vmax; */
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+}
+.btn {
+	background-color: transparent;
+	border: none;
+	text-decoration: none;
+	font-size: 2.2vmax ;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.SearchForm input {
+	height: 3vmax;
+	width: 45vw;
+	border: none;
+	flex-grow: 1;
+	font-size: 1.2vmax;
+}
+.SearchForm input:focus {
+	outline: none;
+}

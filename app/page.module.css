@@ -1,0 +1,40 @@
+.df{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.linksBtn{
+  padding: 20px 40px;
+  background-color: rgb(195, 228, 228);
+  border-radius: 40px;
+  text-decoration: none;
+  transition: box-shadow .3s ease;
+  font-size: 2vmax;
+  color: black;
+  border: none;
+}
+.linksBtn:hover{
+  box-shadow: 3px 3px black;
+  cursor: pointer;
+}
+.main {
+	height: 100vh;
+	width: 100vw;
+	/* background-position: center; */
+	/* background-size: cover; */
+	background: no-repeat center/100% url('https://static3.depositphotos.com/1003670/177/i/600/depositphotos_1776142-stock-photo-sunset-with-zebra-in-africa.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.NavContainer{
+  width: 100vw;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  background-color: red;
+  z-index: 100;
+}

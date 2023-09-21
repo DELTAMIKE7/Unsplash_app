@@ -1,0 +1,240 @@
+/* :root {
+	--column-gutter: 24px;
+    --columns:3;
+} */
+/* .imgContainer {
+	grid-column-gap: 24px;
+	align-items: start;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+} */
+.ImgContainer {
+	/* padding: 5vmax;
+	grid-column-gap: 10px;
+	align-items: start;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr)); */
+	width: 90vw;
+	margin: 2vmax auto;
+	overflow: hidden;
+}
+.card {
+	columns: 3;
+}
+
+.mainImgBox {
+	/* width: fit-content;
+	height: fit-content; */
+	/* background-color: red; */
+	position: relative;
+	/* margin-top: 20px; */
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.mainImgBox div {
+	overflow: hidden;
+}
+.mainImgBox:hover .detailsContainer {
+	opacity: 1;
+	z-index: 15;
+}
+.mainImgBoxAnch {
+	text-decoration-skip-ink: auto;
+	cursor: zoom-in;
+}
+.ImgParent {
+	height: 100%;
+	position: relative;
+}
+.ImgParent img {
+	height: 100%;
+	width: 100%;
+}
+/* Background Color blur grey when hover */
+.bgColor {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	pointer-events: none;
+	height: 100%;
+}
+.mainImgBox:hover .bgColor {
+	background-image: linear-gradient(
+		180deg,
+		#00000057 0,
+		rgba(0, 0, 0, 0.338) 3.5%,
+		rgba(0, 0, 0, 0.324) 7%,
+		rgba(0, 0, 0, 0.306) 10.35%,
+		rgba(0, 0, 0, 0.285) 13.85%,
+		rgba(0, 0, 0, 0.262) 17.35%,
+		rgba(0, 0, 0, 0.237) 20.85%,
+		rgba(0, 0, 0, 0.213) 24.35%,
+		rgba(0, 0, 0, 0.188) 27.85%,
+		rgba(0, 0, 0, 0.165) 31.35%,
+		rgba(0, 0, 0, 0.144) 34.85%,
+		rgba(0, 0, 0, 0.126) 38.35%,
+		rgba(0, 0, 0, 0.112) 41.85%,
+		rgba(0, 0, 0, 0.103) 45.35%,
+		#0000001a 48.85%,
+		rgba(0, 0, 0, 0.103) 52.35%,
+		rgba(0, 0, 0, 0.112) 55.85%,
+		rgba(0, 0, 0, 0.126) 59.35%,
+		rgba(0, 0, 0, 0.144) 62.85%,
+		rgba(0, 0, 0, 0.165) 66.35%,
+		rgba(0, 0, 0, 0.188) 69.85%,
+		rgba(0, 0, 0, 0.213) 73.35%,
+		rgba(0, 0, 0, 0.237) 76.85%,
+		rgba(0, 0, 0, 0.262) 80.35%,
+		rgba(0, 0, 0, 0.285) 83.85%,
+		rgba(0, 0, 0, 0.306) 87.35%,
+		rgba(0, 0, 0, 0.324) 90.85%,
+		rgba(0, 0, 0, 0.338) 94.35%,
+		rgba(0, 0, 0, 0.347) 97.85%,
+		#00000059
+	);
+}
+/* Details on Hover */
+.detailsContainer {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	pointer-events: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	opacity: 0;
+	color: white;
+	/* background-color: red; */
+}
+.detailsTop {
+	/* margin: auto; */
+	width: 100%;
+	height: 50px;
+	/* background-color: green; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.detailsBottom {
+	width: 100%;
+	height: 50px;
+	/* background-color: rgb(33, 53, 209); */
+}
+.LikeAdd {
+	display: grid;
+	gap: 5px;
+	grid-auto-flow: column;
+	justify-self: end;
+	cursor: pointer;
+}
+.LikeBtn {
+	cursor: pointer;
+	pointer-events: auto;
+	display: inline-flex;
+	align-items: center;
+	fill: currentColor;
+	background-color: #ffffffe6;
+	border: 1px solid #0000;
+	box-shadow: 0 1px 2px #0000000f;
+	color: #555;
+	font-size: 14px;
+	height: 32px;
+	line-height: 30px;
+	padding: 0 11px;
+	border-radius: 4px;
+}
+.LkBtnSvg {
+	height: 16px;
+	position: relative;
+	width: 16px;
+}
+.columnBox {
+	display: grid;
+	grid-template-columns: minmax(3, 1fr);
+	row-gap: 23px;
+}
+.dp {
+	border-radius: 50%;
+	/* background-color: red; */
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.detailsBox {
+	display: flex;
+	gap: 10px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.detailsBox span:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.35;
+	min-width: 0;
+}
+.profileName {
+	display: block;
+	font-size: 15px;
+	opacity: 0.8;
+	white-space: nowrap;
+	text-decoration: none;
+	color: #fff;
+}
+.profilePara {
+	display: flex;
+	align-items: center;
+	opacity: 0.9;
+	font-size: 11px;
+	letter-spacing: 0.02em;
+	text-shadow: 0 1px 8px #0000001a;
+}
+.profilePara svg {
+	fill: currentColor;
+	height: 13px;
+	margin-left: 4px;
+	width: 13px;
+	color: white;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+	.card {
+		columns: 2;
+		margin-inline: auto;
+		max-width: 1320px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+	.card {
+		columns: 1;
+		margin-inline: auto;
+	}
+	.detailsContainer {
+		opacity: 1;
+	}
+	.LikeAdd {
+		display: grid;
+		gap: 5px;
+		grid-auto-flow: column;
+		justify-self: end;
+		cursor: pointer;
+	}
+	.LikeBtn {
+		cursor: none;
+		font-size: 10px;
+		height: 32px;
+		line-height: 30px;
+		padding: 0 8px;
+	}
+	.bgColor {
+		display: none;
+	}
+}
