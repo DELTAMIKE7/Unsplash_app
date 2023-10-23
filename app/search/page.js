@@ -167,7 +167,7 @@ const SearchPage = () => {
 							onChange={e => {
 								setSlug(e.target.value);
 							}}
-							placeholder="Likho kiski dekhni hai"
+							placeholder="Enter Something for Search"
 						/>
 						{/* <button onClick={BlankSpace}>x</button> */}
 						<div className={SearchCss.btn} onClick={BlankSpace}>
